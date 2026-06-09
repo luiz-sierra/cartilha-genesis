@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartilha de Acessibilidade e Ergonomia</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background: #1a7a6e;
+            color: white;
+            text-align: center;
+            padding: 40px 20px 30px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 16px;
+            opacity: 0.85;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 40px auto;
+            padding: 0 20px 60px;
+        }
+
+        .secao {
+            background: white;
+            border-radius: 10px;
+            padding: 35px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+
+        .secao-titulo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-left: 5px solid #1a7a6e;
+            padding-left: 15px;
+        }
+
+        .secao-titulo h2 {
+            font-size: 20px;
+            color: #1a7a6e;
+        }
+
+        .secao-titulo .icone {
+            font-size: 22px;
+        }
+
+        .situacao {
+            background: #f8f8f8;
+            border-left: 4px solid #ccc;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .situacao h3 {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .situacao p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .fotos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .fotos-grid img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .foto-unica img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .recomendacoes h3 {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #1a7a6e;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .recomendacoes ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .recomendacoes ul li {
+            font-size: 14px;
+            color: #444;
+            padding: 6px 0 6px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .recomendacoes ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #1a7a6e;
+            font-weight: bold;
+        }
+
+        .conclusao p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .conclusao span {
+            font-weight: bold;
+            color: #1a7a6e;
+        }
+
+        footer {
+            background: #1a7a6e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cartilha Digital de Acessibilidade e Ergonomia</h1>
+    <p>Academia Gênesis — Iepê/SP</p>
+</header>
+
+<div class="container">
+
+    <!-- INTRODUÇÃO -->
+    <div class="secao">
+        <div class="secao-titulo">
+            <span class="icone">💡</span>
+            <h2>Introdução</h2>
+        </div>
+        <div class="situacao">
+            <h3>Sobre esta cartilha</h3>
+            <p>
+                Esta cartilha tem como objetivo orientar sobre boas práticas de 
+                <strong>acessibilidade, ergonomia e segurança</strong> em academias, 
+                com base em visita técnica realizada à Academia Gênesis, localizada em Iepê/SP. 
+                O objetivo é promover um ambiente mais inclusivo, seguro e eficiente para 
+                colaboradores e alunos.
+            </p>
+        </div>
+    </div>
+
+    <!-- ACESSIBILIDADE -->
+    <div class="secao">
+        <div class="secao-titulo">
+            <span class="icone">♿</span>
+            <h2>Acessibilidade</h2>
+        </div>
+
+        <div class="situacao">
+            <h3>Situação encontrada</h3>
+            <p>Durante a visita técnica, observou-se que a academia possui circulação funcional e acesso relativamente simples aos ambientes internos. Entretanto, foram identificados alguns pontos que limitam a acessibilidade universal, como ausência de rampas de acesso, presença de degraus na entrada principal e nos banheiros, além da inexistência de piso tátil e sinalizações acessíveis para pessoas com deficiência visual ou mobilidade reduzida. Também não foram observadas adaptações específicas nos banheiros ou corredores para cadeirantes e usuários com dificuldades de locomoção.</p>
+        </div>
+
+        <div class="fotos-grid">
+            <img src="acessibilidade1.png" alt="Acessibilidade 1">
+            <img src="acessibilidade2.png" alt="Acessibilidade 2">
+            <img src="acessibilidade3.png" alt="Acessibilidade 3">
+            <img src="acessibilidade4.png" alt="Acessibilidade 4">
+            <img src="acessibilidade5.png" alt="Acessibilidade 5">
+            <img src="acessibilidade6.png" alt="Acessibilidade 6">
+        </div>
+
+        <div class="recomendacoes">
+            <h3>Recomendações</h3>
+            <ul>
+                <li>Instalar rampas de acesso com corrimãos nas entradas com desníveis</li>
+                <li>Implantar sinalização tátil e visual para orientação dos usuários</li>
+                <li>Adaptar banheiros para pessoas com mobilidade reduzida</li>
+                <li>Melhorar a acessibilidade dos corredores e áreas de circulação</li>
+                <li>Garantir maior inclusão e autonomia para idosos e pessoas com deficiência</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ERGONOMIA -->
+    <div class="secao">
+        <div class="secao-titulo">
+            <span class="icone">🏋️</span>
+            <h2>Ergonomia</h2>
+        </div>
+
+        <div class="situacao">
+            <h3>Situação encontrada</h3>
+            <p>A academia apresenta boa variedade de equipamentos e organização funcional dos espaços. Os aparelhos possuem estrutura adequada para realização dos exercícios e os espelhos auxiliam na correção postural dos usuários. Apesar disso, foram observados alguns fatores ergonômicos que podem impactar o conforto, como ventilação limitada em determinados setores, iluminação irregular com reflexos nos espelhos, circulação reduzida entre alguns aparelhos e desgaste parcial do piso em áreas de treino.</p>
+        </div>
+
+        <div class="fotos-grid">
+            <img src="ergonomia1.png" alt="Ergonomia 1">
+            <img src="ergonomia2.png" alt="Ergonomia 2">
+            <img src="ergonomia3.png" alt="Ergonomia 3">
+        </div>
+
+        <div class="recomendacoes">
+            <h3>Recomendações</h3>
+            <ul>
+                <li>Melhorar a ventilação e conforto térmico dos ambientes</li>
+                <li>Redistribuir os equipamentos para ampliar a circulação</li>
+                <li>Realizar manutenção do piso para evitar acidentes</li>
+                <li>Reduzir reflexos da iluminação nos espelhos</li>
+                <li>Orientar continuamente os alunos sobre postura correta nos exercícios</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SEGURANÇA -->
+    <div class="secao">
+        <div class="secao-titulo">
+            <span class="icone">⚠️</span>
+            <h2>Segurança</h2>
+        </div>
+
+        <div class="situacao">
+            <h3>Situação encontrada</h3>
+            <p>Foram identificados equipamentos de segurança básicos, como extintores de incêndio e placas informativas distribuídas em alguns setores da academia. Entretanto, também foram observadas fissuras no piso, presença de fiação aparente em determinados ambientes, iluminação limitada em corredores e ausência de sinalização completa de emergência e rotas de fuga.</p>
+        </div>
+
+        <div class="fotos-grid">
+            <img src="seguranca1.png" alt="Segurança 1">
+            <img src="seguranca2.png" alt="Segurança 2">
+            <img src="seguranca3.png" alt="Segurança 3">
+        </div>
+
+        <div class="recomendacoes">
+            <h3>Recomendações</h3>
+            <ul>
+                <li>Realizar manutenção preventiva no piso e nas áreas com desgaste</li>
+                <li>Organizar e proteger adequadamente as instalações elétricas</li>
+                <li>Implantar sinalização de emergência e rotas de fuga</li>
+                <li>Melhorar a iluminação em corredores e áreas externas</li>
+                <li>Utilizar materiais antiderrapantes em áreas com risco de umidade</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- BOAS PRÁTICAS ORGANIZACIONAIS -->
+    <div class="secao">
+        <div class="secao-titulo">
+            <span class="icone">🤝</span>
+            <h2>Boas Práticas Organizacionais</h2>
+        </div>
+
+        <div class="situacao">
+            <h3>Situação encontrada</h3>
+            <p>A Academia Gênesis apresenta atendimento próximo e personalizado aos alunos, favorecendo comunicação acessível e acompanhamento durante os exercícios. O ambiente demonstra preocupação com higienização dos aparelhos e organização funcional das atividades. Apesar disso, alguns ambientes apresentam excesso de informações visuais, falta de padronização em determinadas sinalizações e limitações relacionadas à acessibilidade organizacional.</p>
+        </div>
+
+        <div class="recomendacoes">
+            <h3>Recomendações</h3>
+            <ul>
+                <li>Padronizar placas e sinalizações internas</li>
+                <li>Promover orientações ergonômicas aos alunos</li>
+                <li>Manter ações contínuas de higienização dos aparelhos</li>
+                <li>Fortalecer práticas de atendimento inclusivo e humanizado</li>
+                <li>Organizar melhor os fluxos de circulação nos horários de pico</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CONCLUSÃO -->
+    <div class="secao conclusao">
+        <div class="secao-titulo">
+            <span class="icone">📋</span>
+            <h2>Conclusão</h2>
+        </div>
+        <p>
+            A análise realizada na Academia Gênesis permitiu identificar aspectos positivos relacionados à organização, variedade de equipamentos e atendimento aos usuários, além de pontos que podem ser aprimorados em <span>acessibilidade, ergonomia e segurança</span>. As recomendações apresentadas nesta cartilha contribuem para melhoria do conforto, da inclusão, da segurança e da qualidade do ambiente, promovendo melhores condições para colaboradores e frequentadores da academia. Dessa forma, pequenas adequações estruturais e organizacionais podem gerar impactos positivos significativos na experiência e bem-estar dos usuários.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>Cartilha elaborada por SYNKRON SYSTEMS — Informática, Sociedade e Ética — Junho 2026</p>
+</footer>
+
+</body>
+</html>
